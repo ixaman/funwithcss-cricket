@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes sliding {
+            0% {
+                background-color:orangered;
+                left: 0;
+                top: 0;
+            }
+            25% {
+                background-color:blue;
+                top: 300px;
+            }
+            50% {
+                background-color:crimson;
+                top: 0;
+            }
+            75% {
+                background-color: darkorange;
+                top: 300px;
+            }
+            100% {
+                background-color: lime;
+                left: 94%;
+                top: 0;
+            }
+        }
+        .stage{
+            height: 400px;
+            width: 100%;
+            background-color: gray;
+        }
+        .circle{
+            height: 100px;
+            width: 100px;
+            background-color: indigo;
+            border-radius: 50%;
+            position: relative;
+            animation: sliding 1s ease-in-out 0.5s infinite alternate ;
+            animation-play-state: running;   
+        }
+    </style>
+</head>
+<body>
+    <h1>This is Animation in CSS</h1>
+    <div class="stage">
+        <div class="circle"></div>
+    </div>
+    
+</body>
+</html>
